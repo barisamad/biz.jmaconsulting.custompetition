@@ -1,5 +1,5 @@
 <?php
-define('SURVEY_ID', 2);
+define('PETITION_ID', 2);
 
 require_once 'custompetition.civix.php';
 
@@ -115,7 +115,7 @@ function custompetition_civicrm_alterSettingsFolders(&$metaDataFolders = NULL) {
  * @param CRM_Core_Form $form
  */
 function custompetition_civicrm_postProcess($formName, &$form) {
-  if ($formName == "CRM_Campaign_Form_Petition_Signature" && $form->_surveyId == SURVEY_ID) {
+  if ($formName == "CRM_Campaign_Form_Petition_Signature" && $form->_surveyId == PETITION_ID) {
     $url = "https://www.environmentalhealth.org/index.php/en/thank-you-for-taking-action-on-ab-423";
     CRM_Utils_System::redirect($url);
   }
