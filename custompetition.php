@@ -1,5 +1,5 @@
 <?php
-define('PETITION_ID', 2);
+define('PETITION_ID', 3);
 
 require_once 'custompetition.civix.php';
 
